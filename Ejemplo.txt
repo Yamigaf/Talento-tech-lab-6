@@ -1,0 +1,193 @@
+Microsoft Windows [Versión 10.0.19045.5011]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>code .
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git init
+Reinitialized existing Git repository in C:/Users/User/OneDrive/Documentos/PROGRAMACIÓN NIVELBASICO/PROGRAMACION DE NIVEL BASICO/TEMA 2 Trabajando con Git/SESION 6/LABORATORIO 6/.git/
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git add index.html
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git commit -m "Version con index.html y titulo primario"
+[master (root-commit) 3b14e35] Version con index.html y titulo primario
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git add .
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git commit -m "Nueva version desarrollada - incluye titulo h3"
+[master 1975727] Nueva version desarrollada - incluye titulo h3
+ 1 file changed, 1 insertion(+)
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git log
+commit 19757279ea57b3c4cf3f0656e8070734d5c190d1 (HEAD -> master)
+Author: Yamili Garcia Fuentes <yamili.garcia.f@gmail.com>
+Date:   Wed Nov 13 20:35:38 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+commit 3b14e359857da8b6a55099aebcece318cfe3f4d7
+Author: Yamili Garcia Fuentes <yamili.garcia.f@gmail.com>
+Date:   Wed Nov 13 20:27:24 2024 -0500
+
+    Version con index.html y titulo primario
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git branch
+* master
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git branch rama-version-3
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git branch
+* master
+  rama-version-3
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git checkout rama-version-3
+Switched to branch 'rama-version-3'
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git branch
+  master
+* rama-version-3
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch rama-version-3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git add .
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch rama-version-3
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git commit -m
+error: switch `m' requires a value
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git commit -m "version 3 rama-version-3 incluye titulo h4"
+[rama-version-3 c8ff867] version 3 rama-version-3 incluye titulo h4
+ 1 file changed, 1 insertion(+)
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git log
+commit c8ff86770df9367ed4afc807a0107426f5adf9f1 (HEAD -> rama-version-3)
+Author: Yamili Garcia Fuentes <yamili.garcia.f@gmail.com>
+Date:   Wed Nov 13 20:46:26 2024 -0500
+
+    version 3 rama-version-3 incluye titulo h4
+
+commit 19757279ea57b3c4cf3f0656e8070734d5c190d1 (master)
+Author: Yamili Garcia Fuentes <yamili.garcia.f@gmail.com>
+Date:   Wed Nov 13 20:35:38 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git checkout master
+Switched to branch 'master'
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git branch
+* master
+  rama-version-3
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>code .
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git merge rama-versio-3
+merge: rama-versio-3 - not something we can merge
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>code .
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git merge rama-version-3
+Updating 1975727..c8ff867
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>code .
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git log
+commit c8ff86770df9367ed4afc807a0107426f5adf9f1 (HEAD -> master, rama-version-3)
+Author: Yamili Garcia Fuentes <yamili.garcia.f@gmail.com>
+Date:   Wed Nov 13 20:46:26 2024 -0500
+
+    version 3 rama-version-3 incluye titulo h4
+
+commit 19757279ea57b3c4cf3f0656e8070734d5c190d1
+Author: Yamili Garcia Fuentes <yamili.garcia.f@gmail.com>
+Date:   Wed Nov 13 20:35:38 2024 -0500
+
+    Nueva version desarrollada - incluye titulo h3
+
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git remote add origin https://github.com/Yamigaf/Talento-tech-lab-6.git
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git global --list
+git: 'global' is not a git command. See 'git --help'.
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.01 KiB | 172.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/Yamigaf/Talento-tech-lab-6.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\User\OneDrive\Documentos\PROGRAMACIÓN NIVELBASICO\PROGRAMACION DE NIVEL BASICO\TEMA 2 Trabajando con Git\SESION 6\LABORATORIO 6>
